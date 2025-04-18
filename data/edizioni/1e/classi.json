@@ -1,0 +1,20 @@
+{
+  "classi": [
+    {
+      "nome": "Fighting-Man",
+      "descrizione": "La classe base per il combattimento corpo a corpo."
+    },
+    {
+      "nome": "Magic-User",
+      "descrizione": "Utilizzatore di incantesimi arcani."
+    },
+    {
+      "nome": "Cleric",
+      "descrizione": "Guerriero divino, senza magie offensive arcane."
+    },
+    {
+      "nome": "Thief",
+      "descrizione": "Scaltro e furtivo, abile nei colpi mirati."
+    }
+  ]
+}

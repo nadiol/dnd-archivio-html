@@ -1,0 +1,24 @@
+{
+  "razze": [
+    {
+      "nome": "Umano",
+      "descrizione": "Versatile e ambizioso."
+    },
+    {
+      "nome": "Elfo",
+      "descrizione": "Agile, longevo e sensibile alla magia."
+    },
+    {
+      "nome": "Nano",
+      "descrizione": "Robusto, resistente e determinato."
+    },
+    {
+      "nome": "Halfling",
+      "descrizione": "Piccolo, fortunato e veloce."
+    },
+    {
+      "nome": "Mezzorco",
+      "descrizione": "Forte e intimidatorio, ma spesso incompreso."
+    }
+  ]
+}

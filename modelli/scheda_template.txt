@@ -1,20 +1,3 @@
 Nome: 
 Classe: 
-Razza: 
 Livello: 
-Background: 
-Allineamento: 
-FOR: 
-DES: 
-COS: 
-INT: 
-SAG: 
-CAR: 
-Mod Carisma: 
-Competenza: 
-Bonus Attacco: 
-TS Saggezza: 
-Abilità: 
-Incantesimi: 
-Equipaggiamento: 
-Note: 

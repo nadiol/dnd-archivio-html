@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestione Dati Archivio D&D</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/gestione-dati.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Archivio D&D – Editor Contenuti</h1>
+    <nav>
+      <button onclick="window.location.href='index.html'">🏠 Torna al Sito</button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Gestione Dati</h2>
+      <label for="tipoDato">Tipo di contenuto da caricare:</label>
+      <select id="tipoDato">
+        <option value="razza">Razza</option>
+        <option value="classe">Classe</option>
+        <option value="sottoclasse">Sottoclasse</option>
+        <option value="talento">Talento</option>
+        <option value="abilità">Abilità</option>
+        <option value="oggetto">Oggetto</option>
+        <option value="arma">Arma</option>
+        <option value="patrono">Patrono</option>
+        <option value="incantesimo">Incantesimo</option>
+      </select>
+
+      <h3>Inserisci contenuto grezzo (testo da manuale)</h3>
+      <textarea id="inputGenerico" rows="18" cols="100" placeholder="Incolla qui il testo completo..." style="width:100%; font-family:monospace;"></textarea>
+      <br>
+      <button onclick="analizzaTesto()">📥 Analizza e Scompatta</button>
+    </section>
+
+    <section>
+      <h2>Dati Estratti (Modificabili)</h2>
+      <div id="outputEditor"></div>
+      <button id="salvaBtn" class="hidden" onclick="salvaJsonFinale()">💾 Salva come JSON</button>
+    </section>
+
+    <section>
+      <h2>Anteprima del JSON Finale</h2>
+      <pre id="anteprimaJson" style="background:#f4f4f4; padding:1em; overflow-x:auto;"></pre>
+    </section>
+  </main>
+</body>
+</html>

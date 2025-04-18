@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -27,10 +26,10 @@
       <p>Usa i pulsanti in alto per navigare tra le funzioni del sito.</p>
       <p>Puoi creare un personaggio, caricare una scheda, leggere la guida o avviare una sessione di gioco.</p>
     </section>
+
     <section id="giocatore" class="panel">
       <h2>Area Giocatore</h2>
       <div id="contenutoGiocatore"></div>
-
       <div id="azioneGiocatore">
         <h3>Esegui Azione</h3>
         <select id="azioneSelect">
@@ -41,7 +40,6 @@
         <button onclick="eseguiAzione()">Esegui</button>
         <pre id="risultatoAzione"></pre>
       </div>
-
       <div id="caricaDaDrive">
         <h3>Carica Scheda da Google Drive</h3>
         <label for="driveUrl">URL file JSON pubblico:</label>
@@ -58,7 +56,6 @@
         <button type="submit">Carica</button>
       </form>
       <div id="gestioneDati"></div>
-
       <div id="downloadModelli">
         <h3>Scarica Modelli Compilabili</h3>
         <ul>
@@ -73,13 +70,18 @@
     <section id="creazione" class="panel hidden">
       <h2>Creazione Personaggio</h2>
       <form id="creazionePGForm">
+        <label>Edizione:
+          <select id="edizioneSelect" onchange="aggiornaFormEdizione()">
+            <option value="5e" selected>D&D 5e</option>
+            <option value="3.5e">D&D 3.5</option>
+            <option value="1e">D&D 1a Edizione</option>
+          </select>
+        </label><br><br>
         <label>Nome: <input type="text" id="nomePG" required></label><br>
-        <label>Classe: <input type="text" id="classePG" required></label><br>
-        <label>Livello: <input type="number" id="livelloPG" min="1" required></label><br>
-        <label>Mod. Carisma: <input type="number" id="carPG"></label><br>
-        <label>Competenza: <input type="number" id="profPG"></label><br>
-        <label>Bonus Attacco: <input type="number" id="attPG"></label><br>
-        <label>TS Saggezza: <input type="number" id="tsSagPG"></label><br>
+        <label>Razza: <select id="razzaPG"></select></label><br>
+        <label>Classe: <select id="classePG"></select></label><br>
+        <label>Livello: <input type="number" id="livelloPG" min="1" required></label><br><br>
+        <div id="statsContainer"></div>
         <button type="submit">Genera Scheda JSON</button>
       </form>
       <pre id="outputCreazione"></pre>
@@ -88,16 +90,14 @@
     <section id="guida" class="panel">
       <p><a href="modelli/Guida_Archivio_DnD.pdf" download>📘 Scarica questa guida in PDF</a> | <a href="https://nadiol.github.io/dnd-archivio-html/" target="_blank">🌐 Vai al sito pubblico</a></p>
       <h2>Guida all'Uso</h2>
-      <p>Benvenuto nell'Archivio D&D! Qui puoi creare, caricare e gestire schede personaggio in diversi formati.</p>
       <ul>
-        <li><strong>Scarica modelli:</strong> nella sezione "Gestore", scarica i file .txt, .docx, .xlsx o .pdf editabili per compilare la tua scheda offline.</li>
-        <li><strong>Compila offline:</strong> completa i campi richiesti nel file scelto (usa i due punti per separare etichetta e valore).</li>
-        <li><strong>Carica il file:</strong> torna nella sezione "Gestore" e usa il form per caricare il file compilato. Il sistema lo convertirà in JSON automaticamente.</li>
-        <li><strong>Oppure usa il modulo online:</strong> nella sezione "Crea Personaggio" compila il modulo interattivo per generare la scheda direttamente dal sito.</li>
-        <li><strong>Carica da Google Drive:</strong> inserisci l'URL pubblico del file JSON e caricalo nella sezione "Giocatore".</li>
-        <li><strong>Esegui azioni:</strong> nella sezione "Giocatore", dopo aver caricato una scheda, puoi eseguire attacchi, lanciare incantesimi o fare tiri salvezza.</li>
+        <li><strong>Scarica modelli:</strong> nella sezione "Gestore"</li>
+        <li><strong>Compila offline:</strong> con il tuo editor preferito</li>
+        <li><strong>Carica i file:</strong> torna nel sito e importa tutto</li>
+        <li><strong>Oppure usa il modulo online:</strong> nella sezione "Crea Personaggio"</li>
+        <li><strong>Carica da Google Drive:</strong> inserisci l'URL pubblico del file JSON</li>
+        <li><strong>Esegui azioni:</strong> nella sezione "Giocatore"</li>
       </ul>
-      <p>⚠️ Assicurati che i file siano correttamente formattati, con ogni riga del tipo <code>Chiave: Valore</code>.</p>
     </section>
   </main>
 

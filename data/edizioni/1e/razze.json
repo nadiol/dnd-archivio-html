@@ -1,20 +1,26 @@
 {
-  "razze": [
-    {
-      "nome": "Umano",
-      "descrizione": "Adatto a tutte le classi."
-    },
-    {
-      "nome": "Elfo",
-      "descrizione": "Può avanzare come Magic-User e Fighter."
-    },
-    {
-      "nome": "Nano",
-      "descrizione": "Forte e resistente, con bonus contro giganti."
-    },
-    {
-      "nome": "Halfling",
-      "descrizione": "Mira e furtività superiori."
-    }
-  ]
+  "Umano": {
+    "FOR": 10,
+    "DES": 10,
+    "COS": 10,
+    "INT": 10,
+    "SAG": 10,
+    "CAR": 10
+  },
+  "Halfling": {
+    "FOR": 6,
+    "DES": 12,
+    "COS": 10,
+    "INT": 9,
+    "SAG": 10,
+    "CAR": 11
+  },
+  "Elfo": {
+    "FOR": 8,
+    "DES": 11,
+    "COS": 9,
+    "INT": 11,
+    "SAG": 9,
+    "CAR": 10
+  }
 }

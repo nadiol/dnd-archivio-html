@@ -1,24 +1,26 @@
 {
-  "razze": [
-    {
-      "nome": "Umano",
-      "descrizione": "Versatile e ambizioso."
-    },
-    {
-      "nome": "Elfo",
-      "descrizione": "Agile, longevo e sensibile alla magia."
-    },
-    {
-      "nome": "Nano",
-      "descrizione": "Robusto, resistente e determinato."
-    },
-    {
-      "nome": "Halfling",
-      "descrizione": "Piccolo, fortunato e veloce."
-    },
-    {
-      "nome": "Mezzorco",
-      "descrizione": "Forte e intimidatorio, ma spesso incompreso."
-    }
-  ]
+  "Umano": {
+    "FOR": 10,
+    "DES": 10,
+    "COS": 10,
+    "INT": 10,
+    "SAG": 10,
+    "CAR": 10
+  },
+  "Mezzelfo": {
+    "FOR": 9,
+    "DES": 11,
+    "COS": 9,
+    "INT": 10,
+    "SAG": 10,
+    "CAR": 10
+  },
+  "Gnomo": {
+    "FOR": 7,
+    "DES": 12,
+    "COS": 10,
+    "INT": 11,
+    "SAG": 10,
+    "CAR": 9
+  }
 }

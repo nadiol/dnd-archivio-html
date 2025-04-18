@@ -1,40 +1,26 @@
 {
-  "razze": [
-    {
-      "nome": "Umano",
-      "descrizione": "Adattabile e versatile."
-    },
-    {
-      "nome": "Elfo",
-      "descrizione": "Agile e longevo, con vista superiore."
-    },
-    {
-      "nome": "Nano",
-      "descrizione": "Robusto e resistente, con affinità alla pietra."
-    },
-    {
-      "nome": "Halfling",
-      "descrizione": "Piccolo, fortunato e sfuggente."
-    },
-    {
-      "nome": "Mezzorco",
-      "descrizione": "Forte e aggressivo, erede dell’Orco."
-    },
-    {
-      "nome": "Mezzelfo",
-      "descrizione": "Carismatico e diplomatico, un ponte tra due mondi."
-    },
-    {
-      "nome": "Tiefling",
-      "descrizione": "Segnato dal sangue infernale, dotato di magia innata."
-    },
-    {
-      "nome": "Dragonide",
-      "descrizione": "Discendente dei draghi, orgoglioso e possente."
-    },
-    {
-      "nome": "Gnomo",
-      "descrizione": "Curioso, ingegnoso e amante della conoscenza."
-    }
-  ]
+  "Umano": {
+    "FORZA": 10,
+    "DESTREZZA": 10,
+    "COSTITUZIONE": 10,
+    "INTELLIGENZA": 10,
+    "SAGGEZZA": 10,
+    "CARISMA": 10
+  },
+  "Elfo": {
+    "FORZA": 8,
+    "DESTREZZA": 12,
+    "COSTITUZIONE": 10,
+    "INTELLIGENZA": 11,
+    "SAGGEZZA": 10,
+    "CARISMA": 11
+  },
+  "Nano": {
+    "FORZA": 12,
+    "DESTREZZA": 8,
+    "COSTITUZIONE": 12,
+    "INTELLIGENZA": 10,
+    "SAGGEZZA": 10,
+    "CARISMA": 8
+  }
 }

@@ -1,0 +1,34 @@
+{
+  "nome": "Nano",
+  "incremento_caratteristiche": {
+    "Costituzione": 2
+  },
+  "allineamento": "Per lo più legali e tendenti al bene",
+  "età": "Maturi a 50 anni, vivono fino a 350",
+  "taglia": "Media",
+  "altezza_media_m": 1.35,
+  "peso_medio_kg": 75,
+  "velocità_m": 7.5,
+  "tratti": {
+    "Scurovisione": "Può vedere fino a 18 metri nell'oscurità con limitazioni",
+    "Resilienza nanica": "Vantaggio ai tiri salvezza contro veleni e resistenza al danno da veleno",
+    "Addestramento da combattimento nanico": "Competenza in asce, martelli leggeri e martelli da guerra",
+    "Competenza negli strumenti": "Scelta tra strumenti da fabbro, birraio o costruttore",
+    "Esperto minatore": "Raddoppia il bonus di competenza in Storia per strutture in pietra"
+  },
+  "lingue": [
+    "Comune",
+    "Nanico"
+  ],
+  "sottorazze": [
+    {
+      "nome": "Nano delle colline",
+      "incremento_caratteristiche": {
+        "Saggezza": 1
+      },
+      "tratti": {
+        "Robustezza nanica": "Il massimo dei punti ferita aumenta di 1 e di nuovo di 1 ogni livello"
+      }
+    }
+  ]
+}
